@@ -13,6 +13,7 @@ public class PrintManager {
     }
 
     public void printAll() {
+
         for (Document d : documents) {
             d.printDocument();
         }

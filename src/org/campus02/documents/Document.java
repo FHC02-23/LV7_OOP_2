@@ -1,6 +1,6 @@
 package org.campus02.documents;
 
-public class Document {
+public abstract class Document {
     protected String fileName;
     protected int fileType;
     /*
@@ -13,9 +13,7 @@ public class Document {
         this.fileType = fileType;
     }
 
-    public void printDocument(){
-        System.out.println(fileName + " document >> no content");
-    }
+    public abstract void printDocument();
 
     public void printFileType() {
 /*        if (fileType == 1) {
