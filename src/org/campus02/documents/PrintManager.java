@@ -20,8 +20,9 @@ public class PrintManager {
 
     public Document findDocument(String fileName) {
         for (Document d : documents) {
-            if (d.fileName.equals(fileName))
+            if (d.fileName.equals(fileName)) {
                 return d;
+            }
         }
 
         // not found

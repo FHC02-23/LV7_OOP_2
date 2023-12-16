@@ -10,8 +10,10 @@ public class DemoDocumentsApp {
         TextDocument textDocument = new TextDocument("text.txt", "Lorem Ipsum ...");
         ImageDocument image = new ImageDocument("image.png", 480, 360, "red");
 
+        image.printFileType();
+
         ArrayList<String> someLines = new ArrayList<>();
-        someLines.add("Susi;Sorglos,37");
+        someLines.add("Susi;Sorglos;37");
         someLines.add("Max;Mustermann;21");
         someLines.add("John;Doe;81");
 
@@ -27,7 +29,7 @@ public class DemoDocumentsApp {
         pm.printAll();
 
         System.out.println("----- findDocument -----");
-        Document d = pm.findDocument("ages.csv");
+        Document d = pm.findDocument("text.txt");
         System.out.println(d.fileName);
         d.printDocument();
 

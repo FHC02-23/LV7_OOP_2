@@ -7,7 +7,7 @@ public class CsvDocument extends Document{
     private ArrayList<String> lines;
 
     public CsvDocument(String fileName, ArrayList<String> lines) {
-        super(fileName);
+        super(fileName, 1);
         this.lines = lines;
     }
 
@@ -19,8 +19,13 @@ public class CsvDocument extends Document{
     public void printDocument() {
         System.out.println("fileName = " + fileName);
         System.out.println("content >> ");
-        for(String line : lines) {
-            System.out.println(line);
+
+        for (int i = 0; i < lines.size(); i++) {
+            System.out.println((i + 1) + ": " + lines.get(i));
         }
+
+        /*for(String line : lines) {
+            System.out.println(line);
+        }*/
     }
 }

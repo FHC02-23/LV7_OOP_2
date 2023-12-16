@@ -6,7 +6,7 @@ public class ImageDocument extends Document {
     private String colour;
 
     public ImageDocument(String fileName, int sizeX, int sizeY, String colour) {
-        super(fileName);
+        super(fileName, 2);
         this.sizeX = sizeX;
         this.sizeY = sizeY;
         this.colour = colour;
@@ -15,7 +15,7 @@ public class ImageDocument extends Document {
     @Override
     public void printDocument() {
         System.out.println("this is a image");
-        System.out.println("fileName = " + fileName);
+        System.out.println("fileName:" + fileName);
         System.out.println("sizeX = " + sizeX);
         System.out.println("sizeY = " + sizeY);
         System.out.println("colour = " + colour);
