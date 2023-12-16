@@ -10,7 +10,8 @@ public class DemoDocumentsApp {
         TextDocument textDocument = new TextDocument("text.txt", "Lorem Ipsum ...");
         ImageDocument image = new ImageDocument("image.png", 480, 360, "red");
 
-        image.printFileType();
+        textDocument.printFileType();
+        //image.printFileType();
 
         ArrayList<String> someLines = new ArrayList<>();
         someLines.add("Susi;Sorglos;37");
